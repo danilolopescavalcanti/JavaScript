@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulando Elementos</title>
+</head>
+<body>
+
+    <button id="acao">Botão original</button>
+
+    <a id="meuLink">Meu link</a>
+
+    <script>
+        let botao = document.getElementById("acao");
+        let link = document.getElementById("meuLink");
+
+        botao.innerHTML = "<strong>Clique para Mudar o Link</strong>";
+
+        botao.addEventListener("click", function() {
+            link.setAttribute("href", "https://google.com");
+            link.classList.add("completo");
+        });
+    </script>
+
+</body>
+</html>

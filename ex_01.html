@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seleção de Elementos</title>
+</head>
+<body>
+
+    <div id="alvo">Texto original</div>
+
+    <p class="destaque">Primeiro parágrafo</p>
+    <p class="destaque">Segundo parágrafo</p>
+
+    <script>
+        let div = document.getElementById("alvo");
+        div.textContent = "Seleção por ID concluída.";
+
+        let paragrafos = document.querySelectorAll(".destaque");
+
+        for (let i = 0; i < paragrafos.length; i++) {
+            paragrafos[i].textContent = "Elemento de classe selecionado!";
+        }
+    </script>
+
+</body>
+</html>
